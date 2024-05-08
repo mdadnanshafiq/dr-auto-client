@@ -1,10 +1,11 @@
-import logo from "../../assets/logo.svg";
+// import logo from "../../assets/logo.svg";
 
 const Footer = () => {
   return (
     <footer className="footer p-10 bg-base-200 text-base-content">
       <aside>
-        <img src={logo} alt="" />
+        {/* <img src={logo} alt="" /> */}
+        <h1 className="text-3xl font-bold text-orange-500">Dr. Auto</h1>
         <p>Providing reliable car services since 1992</p>
       </aside>
       <nav>

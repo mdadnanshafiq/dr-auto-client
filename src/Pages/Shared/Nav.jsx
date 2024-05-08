@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo.svg";
+// import logo from "../../assets/logo.svg";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 
@@ -72,8 +72,9 @@ const Nav = () => {
             {navlinks}
           </ul>
         </div>
-        <Link className="size-16 flex justify-center items-center">
-          <img src={logo} alt="" />
+        <Link className=" flex justify-center items-center">
+          {/* <img src={logo} alt="" /> */}
+          <h1 className="text-3xl font-bold text-orange-500">Dr. Auto</h1>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
