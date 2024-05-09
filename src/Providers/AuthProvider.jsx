@@ -42,7 +42,7 @@ const AuthProvider = ({ children }) => {
             withCredentials: true,
           })
           .then((res) => {
-            console.log("token response", res.data);
+            // console.log("token response", res.data);
           });
       } else {
         axios
@@ -50,7 +50,7 @@ const AuthProvider = ({ children }) => {
             withCredentials: true,
           })
           .then((res) => {
-            console.log(res.data);
+            // console.log(res.data);
           });
       }
     });

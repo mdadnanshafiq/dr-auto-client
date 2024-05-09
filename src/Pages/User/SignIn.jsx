@@ -21,7 +21,7 @@ const SignIn = () => {
       .then((result) => {
         // const loggedUser = result.user;
         // const userEmail = { email };
-        console.log(result);
+        // console.log(result);
         // axios
         //   .post("https://dr-auto-server-wine.vercel.app/jwt", userEmail, {
         //     withCredentials: true,

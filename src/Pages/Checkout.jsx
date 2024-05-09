@@ -5,7 +5,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 const Checkout = () => {
   const { user } = useContext(AuthContext);
   const service = useLoaderData();
-  console.log(service);
+  // console.log(service);
   const handleOrder = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -34,7 +34,7 @@ const Checkout = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.insertedId) {
           alert("Success!");
         }
