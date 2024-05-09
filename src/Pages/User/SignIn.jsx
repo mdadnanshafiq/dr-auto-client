@@ -23,7 +23,7 @@ const SignIn = () => {
         // const userEmail = { email };
         console.log(result);
         // axios
-        //   .post("http://localhost:7000/jwt", userEmail, {
+        //   .post("https://dr-auto-server-wine.vercel.app/jwt", userEmail, {
         //     withCredentials: true,
         //   })
         //   .then((data) => {

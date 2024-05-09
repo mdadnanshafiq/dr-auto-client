@@ -25,7 +25,7 @@ const Checkout = () => {
       price,
     };
 
-    fetch("http://localhost:7000/bookings", {
+    fetch("https://dr-auto-server-wine.vercel.app/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",

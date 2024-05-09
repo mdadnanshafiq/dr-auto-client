@@ -8,7 +8,7 @@ const Bookings = () => {
   const [bookings, setBookings] = useState([]);
   const axiosSecure = useAxiosSecure();
   const url = `/bookings?email=${user.email}`;
-  // const url = `http://localhost:7000/bookings?email=${user.email}`;
+  // const url = `https://dr-auto-server-wine.vercel.app/bookings?email=${user.email}`;
   useEffect(() => {
     // axios.get(url, { withCredentials: true }).then((res) => {
     //   setBookings(res.data);
@@ -27,7 +27,7 @@ const Bookings = () => {
   const handleDelete = (id) => {
     const proceed = confirm("Are you sure?");
     if (proceed) {
-      fetch(`http://localhost:7000/bookings/${id}`, {
+      fetch(`https://dr-auto-server-wine.vercel.app/bookings/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -42,7 +42,7 @@ const Bookings = () => {
   };
 
   const handleStatus = (id) => {
-    fetch(`http://localhost:7000/bookings/${id}`, {
+    fetch(`https://dr-auto-server-wine.vercel.app/bookings/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

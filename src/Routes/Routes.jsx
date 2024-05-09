@@ -41,7 +41,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:7000/services/${params.id}`),
+          fetch(`https://dr-auto-server-wine.vercel.app/services/${params.id}`),
       },
     ],
   },
